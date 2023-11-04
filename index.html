@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+        <title>Calander</title>
+    </head>
+    <body>
+        <div class="container p-3">
+            <div class="row m-0 p-2">
+                <a class="btn btn-primary" href="">Back</a>
+            </div>
+            <div id="calendar"></div>
+        </div>
+
+        <!-- Your popup -->
+        <div id="add-new-event-popup-wraper">
+            <div class="add-new-event-popup">
+                <h3>Add Event</h3>
+                <i class="fas fa-times"></i>
+                <form id="event-form" class="mt-4">
+                    <label for="event-title">Event Title:</label>
+                    <input class="form-control mb-4" type="text" id="event-title" value="Not available" required />
+
+                    <label for="time-range">Select Time Range:</label>
+                    <select class="form-control mb-4" id="time-range" required>
+                        <option value="08:00-08:30">08:00 - 08:30</option>
+                        <option value="08:30-09:00">08:30 - 09:00</option>
+                        <option value="09:00-09:30">09:00 - 09:30</option>
+                        <option value="09:30-10:00">09:30 - 10:00</option>
+                        <option value="10:00-10:30">10:00 - 10:30</option>
+                        <option value="10:30-11:00">10:30 - 11:00</option>
+                        <option value="11:00-11:30">11:00 - 11:30</option>
+                        <option value="11:30-12:00">11:30 - 12:00</option>
+                        <option value="12:00-12:30">12:00 - 12:30</option>
+                        <option value="12:30-13:00">12:30 - 13:00</option>
+                        <option value="13:00-13:30">13:00 - 13:30</option>
+                        <option value="16:00-16:30">16:00 - 16:30</option>
+                        <option value="16:30-17:00">16:30 - 17:00</option>
+                        <option value="17:00-17:30">17:00 - 17:30</option>
+                        <option value="17:30-18:00">17:30 - 18:00</option>
+                        <option value="18:00-18:30">18:00 - 18:30</option>
+                        <option value="18:30-19:00">18:30 - 19:00</option>
+                        <option value="19:00-19:30">19:00 - 19:30</option>
+                    </select>
+
+                    <div class="text-right">
+                        <button class="btn btn-primary btn-sm mt-4" type="submit">Add Event</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
